@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package com.gateway;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @author snaredla
+ *
+ */
+@RestController
+public class FallBackMethodController {
+	
+	@GetMapping("/customerServiceFallBack")
+    public String userServiceFallBackMethod() {
+        return "Customer Service is taking longer than Expected." +
+                " Please try again later";
+    }
+
+    @GetMapping("/addressServiceFallBack")
+    public String departmentServiceFallBackMethod() {
+        return "Address Service is taking longer than Expected." +
+                " Please try again later";
+    }
+
+}

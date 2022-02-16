@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.address.service.impl;
+
+import com.address.service.AddressService;
+
+/**
+ * @author snaredla
+ *
+ */
+public class AddressServiceImpl implements AddressService {
+
+}

@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package com.customer.service.Impl;
+
+import com.customer.dto.CustomerResponse;
+import com.customer.entity.Customer;
+import com.customer.service.CustomerService;
+
+/**
+ * @author snaredla
+ *
+ */
+public class CustomerServiceImpl implements CustomerService {
+
+	@Override
+	public Customer saveCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CustomerResponse getCustomer(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

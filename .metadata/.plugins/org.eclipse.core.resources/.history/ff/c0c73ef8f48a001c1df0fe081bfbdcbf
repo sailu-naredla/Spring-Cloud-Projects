@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.address.service;
+
+import com.address.entity.Address;
+
+/**
+ * @author snaredla
+ *
+ */
+public interface AddressService {
+	
+	public Address saveAddress(Address address);
+
+}

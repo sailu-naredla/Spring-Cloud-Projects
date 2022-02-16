@@ -1,0 +1,56 @@
+server:
+  port: 9191
+  
+#Not required these config since we have moved Eureka server config to Cloud config server using github   
+#eureka:
+  #client:
+    #register-with-eureka: true
+    #fetch-registry: true
+    #service-url:
+      #defaultZone: http://localhost:8761/eureka/
+  #instance:
+    #hostname: localhost
+
+spring:
+  main:
+    web:
+      web-application-type: reactive
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: CUSTOMER-SERVICE
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/customers/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: CUSTOMER-SERVICE
+                fallbackuri: forward:/customerServiceFallBack
+        - id: ADDRESS-SERVICE
+          uri: lb://ADDRESS-SERVICE
+          predicates:
+            - Path=/addresses/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: ADDRESS-SERVICE
+                fallbackuri: forward:/addressServiceFallBack
+
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

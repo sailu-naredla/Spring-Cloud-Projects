@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.gateway;
+
+/**
+ * @author snaredla
+ *
+ */
+public class Resilience4JConfig {
+
+}

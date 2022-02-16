@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: OAUTH-SERVER
+  #zipkin:
+    #base-url: http://127.0.0.1:9411/

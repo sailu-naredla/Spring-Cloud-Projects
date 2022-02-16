@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.customer.service;
+
+/**
+ * @author snaredla
+ *
+ */
+public interface CustomerService {
+
+}

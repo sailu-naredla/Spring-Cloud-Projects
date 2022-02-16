@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.batch.repository;
+
+/**
+ * @author snaredla
+ *
+ */
+public interface UserRepository {
+
+}

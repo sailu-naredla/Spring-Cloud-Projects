@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package com.address.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.address.entity.Address;
+import com.address.repository.AddressRepository;
+import com.address.service.AddressService;
+
+/**
+ * @author snaredla
+ *
+ */
+@Service
+@Slf4j
+public class AddressServiceImpl implements AddressService {
+
+	@Autowired
+	private AddressRepository addressRepository;
+	
+	@Override
+	public Address saveAddress(Address address) {
+		log.info("Inside saveAddres");
+		return addressRepository.save(address);
+	}
+
+}

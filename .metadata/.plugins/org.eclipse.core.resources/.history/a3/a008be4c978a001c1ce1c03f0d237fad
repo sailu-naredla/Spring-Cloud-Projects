@@ -1,0 +1,15 @@
+package com.hystrix;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@EnableHystrixDashboard
+@EnableEurekaClient
+@SpringBootApplication
+public class BootHystrixDashboardApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BootHystrixDashboardApplication.class, args);
+	}
+
+}

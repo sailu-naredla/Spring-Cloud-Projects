@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package com.customer.service.Impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.customer.dto.CustomerResponse;
+import com.customer.entity.Customer;
+import com.customer.repository.CustomerRepository;
+import com.customer.service.CustomerService;
+
+/**
+ * @author snaredla
+ *
+ */
+public class CustomerServiceImpl implements CustomerService {
+	
+	@Autowired
+	private CustomerRepository customerRepository;
+
+	@Override
+	public Customer saveCustomer(Customer customer) {
+		return customerRepository.save(customer);
+	}
+
+	@Override
+	public CustomerResponse getCustomer(Long customerId) {
+		return customerRepository.findByCustomerId(customerId);
+	}
+
+}

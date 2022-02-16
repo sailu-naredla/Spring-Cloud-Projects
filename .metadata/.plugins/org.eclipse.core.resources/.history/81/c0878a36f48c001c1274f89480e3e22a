@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.batch.repository;
+
+/**
+ * @author snaredla
+ *
+ */
+import com.techprimers.springbatchexample1.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Integer> {
+}

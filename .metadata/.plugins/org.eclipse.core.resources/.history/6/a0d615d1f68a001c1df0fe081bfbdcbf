@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.customer.service.Impl;
+
+import com.customer.service.CustomerService;
+
+/**
+ * @author snaredla
+ *
+ */
+public class CustomerServiceImpl implements CustomerService {
+
+}

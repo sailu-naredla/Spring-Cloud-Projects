@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package com.customer.entity;
+
+/**
+ * @author snaredla
+ *
+ */
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Customer {
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long customerId;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private Long addressId;
+    
+    
+}

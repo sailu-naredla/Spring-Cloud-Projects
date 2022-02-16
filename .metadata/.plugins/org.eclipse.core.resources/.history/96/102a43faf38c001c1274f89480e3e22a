@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.batch.entity;
+
+/**
+ * @author snaredla
+ *
+ */
+public class User {
+
+}

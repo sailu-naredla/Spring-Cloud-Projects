@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.customer.dto;
+
+/**
+ * @author snaredla
+ *
+ */
+public class Address {
+
+}

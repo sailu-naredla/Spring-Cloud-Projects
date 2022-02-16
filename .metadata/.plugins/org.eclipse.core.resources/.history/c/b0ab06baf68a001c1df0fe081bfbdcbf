@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.customer.service;
+
+import com.customer.entity.Customer;
+
+/**
+ * @author snaredla
+ *
+ */
+public interface CustomerService {
+	
+	public Customer saveCustomer(Customer customer);
+	
+	public CustomerResponse getCustomer(Long userId);
+
+}

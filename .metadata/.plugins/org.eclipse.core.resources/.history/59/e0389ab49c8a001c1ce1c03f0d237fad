@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.address.repository;
+
+import org.springframework.stereotype.Repository;
+
+/**
+ * @author snaredla
+ *
+ */
+@Repository
+public interface AddressRepository extends JpaRepository<Address,Long> {
+
+}

@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.address.entity;
+
+/**
+ * @author snaredla
+ *
+ */
+public class Address {
+
+}

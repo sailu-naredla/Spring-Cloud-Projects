@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.customer.repository;
+
+import org.springframework.stereotype.Repository;
+
+import com.customer.entity.Customer;
+
+/**
+ * @author snaredla
+ *
+ */
+@Repository
+public interface CustomerRepository extends JpaRepository<Customer,Long> {
+
+	 Customer findByUserId(Long customerId);
+}
