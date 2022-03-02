@@ -1,9 +1,12 @@
 # Spring-Cloud-Projects
 
 #Address service endpoints
+
 http://localhost:9001/addresses/
+
 POST
 Content-Type: application/json
+
 request:
 {
     "type":"Perminent",
@@ -28,9 +31,11 @@ Response:
 
 
 http://localhost:9001/addresses/1
+
 GET
 
 Response:
+
 {
     "addressId": 1,
     "type": "Perminent",
@@ -44,6 +49,7 @@ Response:
 #Customer service endpoints
 
 http://localhost:9002/customers/
+
 POST
 Content-Type: application/json
 
@@ -56,6 +62,7 @@ request:
 }
 
 response:
+
 {
     "customerId": 1,
     "name": "Mydreams Media",
@@ -64,7 +71,9 @@ response:
 }
 
 http://localhost:9002/customers/1
+
 GET
+
 response:
 {
     "customer": {
